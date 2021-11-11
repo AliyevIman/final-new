@@ -1,0 +1,609 @@
+a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-cat {
+  width: 100%;
+  height: 80vh;
+  background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/breadcumd_1512x.jpg?v=1625127338);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 567px) {
+  #header {
+    height: 100%;
+  }
+  #header .bars {
+    display: block;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  #header .menu {
+    display: none;
+  }
+  #footer {
+    height: 100%;
+  }
+  #footer .top-footer {
+    border: none;
+    margin-top: 40px;
+  }
+  #footer .top-footer .left-top {
+    border: none;
+  }
+  #footer .top-footer .right-top .latter {
+    left: 47%;
+  }
+  #footer .midle-footer .corporate .first-text i {
+    display: block;
+  }
+  #footer .midle-footer .corporate ul li {
+    display: none;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 992px) {
+  #header {
+    height: 100%;
+  }
+  #header .bars {
+    display: block;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    color: rgba(0, 0, 0, 0.713);
+  }
+  #header .menu {
+    display: none;
+  }
+  #footer {
+    height: 100%;
+  }
+  #footer .top-footer .left-top {
+    border: none;
+  }
+  #footer .top-footer .right-top .email input {
+    width: 200px;
+  }
+  #footer .top-footer .right-top .latter {
+    left: 47%;
+  }
+}
+
+#header {
+  background-color: transparent;
+  width: 100%;
+  padding: 15px 10px;
+  position: relative;
+  position: absolute;
+  z-index: 99999;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.35);
+}
+
+#header .logo {
+  width: 20%;
+}
+
+#header .logo img {
+  max-width: 300px;
+}
+
+#header .bars {
+  display: none;
+}
+
+#header .menu {
+  width: 60%;
+}
+
+#header .menu ul {
+  height: 100%;
+}
+
+#header .menu ul .home {
+  position: relative;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+#header .menu ul .home:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .menu ul .home ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: -5%;
+  width: 220px;
+  height: 430px;
+  background-color: #ffff;
+  text-align: start;
+  padding: 10px 10px;
+}
+
+#header .menu ul .home ul li {
+  padding: 8px;
+}
+
+#header .menu ul .home ul li a {
+  color: #A8A8A8;
+  display: block;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  padding: 0%;
+  letter-spacing: 1px;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+#header .menu ul .home ul li a:hover {
+  color: #E24C43;
+}
+
+#header .menu ul .shop:hover .big-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .menu ul .shop .big-menu {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+  width: 96%;
+  left: 2%;
+  top: 100%;
+  height: 300px;
+  background-color: #ffff;
+  position: absolute;
+}
+
+#header .menu ul .shop .big-menu .text-head {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#header .menu ul .shop .big-menu .text-head::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #E24C43;
+  position: absolute;
+  bottom: 30%;
+  left: 0%;
+}
+
+#header .menu ul .shop .big-menu .text-head a {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  color: #2A2B2C;
+}
+
+#header .menu ul .shop .big-menu li {
+  padding: 5px;
+}
+
+#header .menu ul .shop .big-menu li a {
+  color: #A8A8A8;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+#header .menu ul .shop .big-menu li a:hover {
+  color: #E24C43;
+}
+
+#header .menu ul .shop .big-menu .litle-menu-4 img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+#header .menu ul .collect:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .menu ul .collect ul {
+  position: absolute;
+  top: 100%;
+  left: 2%;
+  width: 95%;
+  height: 300px;
+  background-color: #ffff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+#header .menu ul .collect ul img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#header .menu ul .collect ul p {
+  padding: 10px 0;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #A8A8A8;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+#header .menu ul .collect ul p:hover {
+  color: #E24C43;
+}
+
+#header .menu ul .blog {
+  position: relative;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+#header .menu ul .blog:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .menu ul .blog ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: -5%;
+  width: 220px;
+  height: 220px;
+  background-color: #ffff;
+  text-align: start;
+  padding: 10px 10px;
+}
+
+#header .menu ul .blog ul li {
+  padding: 8px;
+}
+
+#header .menu ul .blog ul li a {
+  color: #A8A8A8;
+  display: block;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  padding: 0%;
+  letter-spacing: 1px;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+#header .menu ul .blog ul li a:hover {
+  color: #E24C43;
+}
+
+#header .menu ul .page {
+  position: relative;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+#header .menu ul .page:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .menu ul .page ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: -5%;
+  width: 220px;
+  height: 220px;
+  background-color: #ffff;
+  text-align: start;
+  padding: 10px 10px;
+}
+
+#header .menu ul .page ul li {
+  padding: 8px;
+}
+
+#header .menu ul .page ul li a {
+  color: #A8A8A8;
+  display: block;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  padding: 0%;
+  letter-spacing: 1px;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+#header .menu ul .page ul li a:hover {
+  color: #E24C43;
+}
+
+#header .menu ul li {
+  padding: 15px 0;
+}
+
+#header .menu ul li a {
+  display: inline-block;
+  color: #ffff;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 18px;
+}
+
+#header .contact {
+  width: 20%;
+}
+
+#header .contact i {
+  color: #ffff;
+  padding: 11px;
+  font-size: 20px;
+}
+
+#header .contact .shopping-bag {
+  position: relative;
+}
+
+#header .contact .shopping-bag .shop-0 {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+#header .contact .shopping-bag .shop-0 span {
+  padding: 2px 4px;
+  border-radius: 50%;
+  background-color: #E24C43;
+  font-size: 10px;
+  color: #ffff;
+}
+
+#footer {
+  width: 100%;
+  background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/bg-2_1512x.jpg?v=1626947531);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+}
+
+#footer .top-footer {
+  color: #ffff;
+  padding: 30px 0;
+}
+
+#footer .top-footer .left-top {
+  border-right: 3px solid #ED6436;
+}
+
+#footer .top-footer .left-top h4 {
+  color: #ED6436;
+  font-size: 30px;
+}
+
+#footer .top-footer .right-top {
+  position: relative;
+  width: 100%;
+}
+
+#footer .top-footer .right-top .email {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  color: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #4A4A4A;
+}
+
+#footer .top-footer .right-top .email input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  color: #ffff;
+  outline: none;
+}
+
+#footer .top-footer .right-top .email i {
+  color: #ffff;
+  font-size: 20px;
+  width: 90px;
+  height: 40px;
+  background-color: #ED6436;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#footer .midle-footer {
+  color: #ffff;
+}
+
+#footer .midle-footer .petio li {
+  margin-top: 20px;
+}
+
+#footer .midle-footer .petio li p {
+  color: #A8A8A8;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#footer .midle-footer .petio li p a {
+  color: #ED6436;
+}
+
+#footer .midle-footer .petio .marker i {
+  color: #ED6436;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+#footer .midle-footer .petio .marker span {
+  font-size: 19px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#footer .midle-footer .petio .sosial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#footer .midle-footer .petio .sosial i {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+  background-color: #ffff;
+  cursor: pointer;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+#footer .midle-footer .petio .sosial i:hover {
+  background-color: #ED6436;
+  color: #ffff;
+}
+
+#footer .midle-footer .corporate ul .first-text {
+  padding-bottom: 15px;
+}
+
+#footer .midle-footer .corporate ul .first-text i {
+  font-size: 20px;
+  display: none;
+}
+
+#footer .midle-footer .corporate ul .first-text a {
+  color: #ffff;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+
+#footer .midle-footer .corporate ul li {
+  padding: 6px 0;
+}
+
+#footer .midle-footer .corporate ul li a {
+  color: #A8A8A8;
+  font-size: 18px;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+#footer .midle-footer .corporate ul li a:hover {
+  color: #ED6436;
+}
+
+#footer hr {
+  color: rgba(255, 255, 255, 0.467);
+}
+
+#footer .bottom-footer .left-bottom p {
+  color: #A8A8A8;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+}
+
+@media (max-width: 567px) {
+  #header {
+    height: 100%;
+  }
+  #header .bars {
+    display: block;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  #header .menu {
+    display: none;
+  }
+  #footer {
+    height: 100%;
+  }
+  #footer .top-footer {
+    border: none;
+    margin-top: 40px;
+  }
+  #footer .top-footer .left-top {
+    border: none;
+  }
+  #footer .top-footer .right-top .latter {
+    left: 47%;
+  }
+  #footer .midle-footer .corporate .first-text i {
+    display: block;
+  }
+  #footer .midle-footer .corporate ul li {
+    display: none;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 992px) {
+  #header {
+    height: 100%;
+  }
+  #header .bars {
+    display: block;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    color: rgba(0, 0, 0, 0.713);
+  }
+  #header .menu {
+    display: none;
+  }
+  #footer {
+    height: 100%;
+  }
+  #footer .top-footer .left-top {
+    border: none;
+  }
+  #footer .top-footer .right-top .email input {
+    width: 200px;
+  }
+  #footer .top-footer .right-top .latter {
+    left: 47%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
