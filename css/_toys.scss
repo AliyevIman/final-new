@@ -1,102 +1,652 @@
-@import"_mixin.scss";
-@import"_responsive";
-
-
+// @import"_mixin";
+// @import"_responsive";
+// @import"style";
 
 // <----Section-cat start---->
 
 
 .section-cat {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/breadcumd_1512x.jpg?v=1625127338);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+
+    .center-boxes {
+        width: 80%;
+        margin: auto;
+
+        .text-center {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+            color: #fff;
+
+            h1 {
+                font-size: 50px;
+            }
+
+            ul {
+                li {
+                    i {
+                        padding: 0px 5px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .bottom-center {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
 
 
-    // .section-center {
-    //     // height: 100%;
-    //     width: 100%;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
+        .boxes {
+            // border: 3px solid black;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            text-align: center;
 
-    //     .collection-slide {
-    //         width: 100%;
-    //         height: 100%;
+            .img-text1 {
+                position: relative;
 
-    //         .center-catfood {
-    //             // width: 150px;
-    //             // height: 150px;
+                h6 {
+                    margin-top: 15px;
+                    color: #fff;
+                    font-size: 17px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 600;
+                }
 
-    //             img {
-    //                 border-radius: 50%;
+                &::before {
+                    content: "";
+                    width: 55%;
+                    position: absolute;
+                    height: 3.3px;
+                    bottom: -30%;
+                    left: 22%;
+                    background-color: $narinci-aciq;
+                }
 
-    //             }
+                h6 {
+                    cursor: pointer;
+                }
+            }
 
-                
-    //         }
-    //         .center-cattoy{
-    //             // width: 150px;
-    //             // height: 150px;
-    //             img{
-    //                 border-radius: 50%;
-    //             }
-    //         }
-    //         .center-dogfood{
-    //             // width: 100px;
-    //             // height: 100px;
-    //             img{
-    //                 border-radius: 50%;
-    //             }
-    //         }
-    //         .center-dogtoys{
-    //             // width: 150px;
-    //             // height: 150px;
-    //             img{
-    //                 border-radius: 50%;
-    //             }
-    //         }
+            .img-text {
+                position: relative;
+
+                h6 {
+                    margin-top: 15px;
+                    color: #fff;
+                    font-size: 17px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                &::before {
+                    content: "";
+                    width: 0%;
+                    position: absolute;
+                    height: 3px;
+                    top: 130%;
+                    left: 50%;
+                    transform: translate(-50%, -130%);
+
+                    background-color: $narinci-aciq;
+                    transition: 500ms all;
+                }
+
+                &:hover {
+                    &::before {
+                        width: 55%;
+                    }
+                }
+            }
 
 
-    //     }
+
+            .img-box {
+                // border: 1px solid green;
+                border-radius: 50%;
+                overflow: hidden;
+                // margin: 0px 10px;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+
+                &:hover:before,
+                ::after {
+                    content: "";
+                    display: block;
+                    border: 2px solid rgba(255, 255, 255, 0.534);
+                    position: absolute;
+                    left: 0%;
+                    // bottom: 0%;
+                    width: 100%;
+                    height: 100%;
+                    top: 0%;
+                    // right: 0%;
+                    border-radius: 100%;
+                    transition: 300ms all;
+                    animation: animate 500ms infinite;
 
 
-    //     .center {
-    //         text-align: center;
 
-    //         h1 {
-    //             font-size: 55px;
-    //             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    //             font-weight: 500;
-    //             color: #ffff;
+                }
 
-    //         }
 
-    //         ul {
-    //             color: #ffff;
 
-    //             li {
-    //                 span {
-    //                     font-size: 17px;
-    //                     padding: 10px;
-    //                 }
 
-    //                 i {
-    //                     font-size: 19px;
-    //                     font-weight: lighter;
-    //                 }
-    //             }
-    //         }
+            }
 
-    //     }
-    // }
+            .img-box2 {
+                border-radius: 50%;
+                overflow: hidden;
+                // margin: 0px 10px;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+
+                &::before {
+                    content: "";
+                    height: 100%;
+                    color: red;
+                    width: 100%;
+                    border-radius: 50%;
+                    border: 2px solid rgba(255, 255, 255, 0.555);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0%;
+                    bottom: 0%;
+                    transform: scale(1.1);
+                }
+
+
+            }
+
+            @keyframes animate {
+                0% {
+                    opacity: 0;
+                    transform: scale(0.8);
+
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                    transform: scale(1.2);
+                }
+
+            }
+
+            img {
+                width: 100%;
+            }
+
+
+        }
+    }
+
+
+
+
+
 
 }
 
 // <----Section-cat start---->
+.section-shopping {
+    width: 100%;
+    // height: 100vh;
+    padding: 90px 0;
+
+    // <----Fliter left
+    .filter-left {
+        .price {
+            h5 {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 600
+            }
+
+            ul {
+                margin: 30px 0;
+
+                li {
+                    &:nth-child(1) {
+                        input {
+                            width: 80px;
+                            padding: 0 25px;
+                            outline: none;
+                            border: 1px solid rgba(0, 0, 0, 0.337);
+
+                            &::placeholder {
+                                color: black;
+                            }
+
+
+                        }
+                    }
+
+                    span {
+                        color: rgba(0, 0, 0, 0.59);
+
+                    }
+
+                    &:nth-child(3) {
+                        input {
+                            width: 80px;
+                            padding: 0 22px;
+
+                            border: 1px solid rgba(0, 0, 0, 0.337);
+                            outline: none;
+
+                            &::placeholder {
+                                color: black;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .range {
+                outline: none;
+                border: none;
+                width: 100%;
+                background-color: $narinci-aciq;
+
+
+            }
+
+            a {
+                display: block;
+                color: black;
+                width: 60px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+                height: 30px;
+                border: 2px solid rgba(0, 0, 0, 0.466);
+                line-height: 30px;
+                text-align: center;
+                border-radius: 30px;
+                margin: 20px 0;
+                position: relative;
+                overflow: hidden;
+                z-index: 999999999;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 0%;
+                    transition: 100ms all ease;
+                    z-index: 0;
+
+
+                }
+
+                &:hover {
+                    border: none;
+
+                    &::before {
+                        content: "Filter";
+                        width: 100%;
+                        height: 100%;
+                        background-color: $narinci-aciq;
+                        color: #fff;
+
+
+                        // top: 100%;
+                    }
+
+
+                }
+
+
+            }
+        }
+
+        .size {
+            ul {
+
+
+
+                li {
+                    margin: 10px 0;
+                    @include input;
+
+
+
+
+                }
+            }
+        }
+
+        .color {
+            @include input3;
+
+            ul {
+
+
+
+                li {
+                    margin: 10px 0;
+                    @include input;
+
+                    label {
+                        span {
+
+                            width: 30px;
+                            height: 30px;
+                            line-height: 15px;
+                            background-color: red;
+                            border-radius: 100%;
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .brand {
+            @include input4;
+
+            ul {
+
+
+
+                li {
+                    margin: 10px 0;
+                    // @include input;
+
+
+
+                }
+            }
+        }
+
+        .best-seller {
+            height: 100%;
+
+            .cras {
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.452);
+
+                .left-product {
+                    width: 110px;
+                    height: 90px;
+                    background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/products/product-23_100x.jpg?v=1636281259);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    border: 1px solid rgba(0, 0, 0, 0.255);
+                    border-radius: 3px;
+                    padding: 25px 0;
+                    margin-right: 35px;
+
+                }
+
+                .right-product {
+                    .star {
+
+
+                        i {
+                            color: $sari;
+                            font-size: 12px;
+                            margin-bottom: 5px;
+
+                        }
+
+                        span {
+                            font-size: 15px;
+                            color: rgba(0, 0, 0, 0.522);
+                        }
+                    }
+
+                    .texti {
+                        h6 {
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight: 600;
+
+                        }
+
+                        p {
+                            color: $narinci-aciq;
+                            font-size: 25px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        @include morbi;
+        @include morrbi2;
+        @include purus;
+
+    }
+
+    .tags {
+        .tag-buttons {
+            .catf-btn {
+                width: 90px;
+                height: 35px;
+                line-height: 30px;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.425);
+                border-radius: 30px;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 10px;
+
+
+                &::before {
+                    content: "Cat Food";
+                    position: absolute;
+                    right: 0%;
+                    top: 0%;
+                    background-color: $narinci-aciq;
+                    width: 0%;
+                    height: 100%;
+                    transition: 0.3s all ease;
+                    cursor: pointer;
+                    color: #fff;
+                    font-size: 13px;
+
+                }
+
+                &:hover {
+
+                    // border: 1px solid $narinci-aciq;
+                    &::before {
+                        width: 100%;
+
+
+                        a {
+                            color: #fff;
+
+                        }
+                    }
+                }
+
+                a {
+                    display: inline-block;
+                    color: black;
+                    z-index: 9999;
+                    font-size: 13px;
+
+                }
+            }
+
+            @include dogf;
+            @include dogt;
+            @include fishf;
+        }
+    }
+
+    .shop-zone {
+        .shop-bag1 {
+            // padding-left: 20px;
+            position: relative;
+
+
+            &:hover {
+
+                // z-index: 0;
+                .img-hidden {
+                    opacity: 1;
+                    visibility: visible;
+                    // z-index: 9999999;
+                }
+
+                .srch {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            .img1 {
+
+                border: 1px solid rgba(0, 0, 0, 0.433);
+                border-radius: 6px;
+                cursor: pointer;
+
+
+            }
+
+
+
+
+            .img-hidden {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+
+                cursor: pointer;
+                border: 1px solid rgba(0, 0, 0, 0.433);
+                border-radius: 6px;
+                transition: 500ms all ease;
+                opacity: 0;
+                visibility: hidden;
+
+            }
+
+            .srch {
+                display: grid;
+                position: absolute;
+                bottom: 55%;
+                right: 5%;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.2s all ease-in-out;
+
+                i {
+                    width: 38px;
+
+                    height: 35px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    border: 1px solid rgba(0, 0, 0, 0.241);
+                    line-height: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: 0.3s all ease-in-out;
+                    font-size: 20px;
+
+                    &:hover {
+                        background-color: $narinci-aciq;
+                        color: #fff;
+                    }
+                }
+            }
+
+
+        }
+
+        .star {
+
+            i {
+                color: $sari;
+                font-size: 12px;
+                margin: 15px 0;
+
+
+            }
+
+            span {
+                font-size: 15px;
+                color: rgba(0, 0, 0, 0.522);
+
+            }
+
+            .texti {
+                h6 {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 600;
+                    transition: 0.2S all ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $narinci-aciq
+                    }
+
+                }
+
+                p {
+                    color: $narinci-aciq;
+                    font-size: 23px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        @include shop-bag2;
+        @include shop-bag3;
+        @include shop-bag4;
+        @include shop-bag5;
+        @include shop-bag6;
+        @include shop-bag7;
+        @include shop-bag8;
+        @include shop-bag9;
+        @include shop-bag10;
+        @include shop-bag11;
+        @include shop-bag12;
+        @include shop-bag13;
+        @include shop-bag14;
+        @include shop-bag15;
+      
+
+
+    }
+
+}
+
+// <----Fliter left end
 
 
 
@@ -135,10 +685,29 @@
 @media (max-width:567px) {
     #header {
         height: 100%;
+        background-color: #fff;
+
+        .logo {
+            img {
+                &:nth-child(1) {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    width: 300px;
+                    //   height: 300px;
+                    display: block;
+                }
+            }
+
+        }
 
         .bars {
             display: block;
             order: -1;
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
         }
 
         .menu {
@@ -181,9 +750,79 @@
             }
         }
     }
+
+    .section-cat {
+        .bottom-center {
+            .dog-t {
+                display: none;
+            }
+
+            .dog-f {
+                display: none;
+            }
+
+            .cat-t {
+                display: none;
+            }
+
+        }
+    }
+
+    .section-shopping {
+        .filter-left {
+            display: none;
+
+        }
+    }
 }
 
-@media (min-width:567px) and (max-width:992px) {
+@media(min-width:567px) and (max-width: 768px) {
+    #header {
+        height: 100%;
+        background-color: #fff;
+
+        .bars {
+            display: block;
+            order: -1;
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+
+    .section-cat {
+        .bottom-center {
+            .dog-t {
+                display: none;
+            }
+
+            .dog-f {
+                display: none;
+            }
+
+
+        }
+    }
+
+    .section-shopping {
+        .filter-left {
+            display: none;
+
+        }
+    }
+
+}
+
+
+
+
+
+
+@media (min-width:768px) and (max-width:992px) {
     #header {
         height: 100%;
 
@@ -191,6 +830,21 @@
             display: block;
             order: -1;
             color: rgba(0, 0, 0, 0.713);
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+
+    #header {
+        height: 100%;
+        background-color: #fff;
+
+        .bars {
+            display: block;
+            order: -1;
+
         }
 
         .menu {
@@ -225,6 +879,25 @@
 
         // }
     }
-}
 
-@media(min-width:992px) and (max-width:1200px) {}
+    .section-cat {
+        .bottom-center {
+            .dog-t {
+                display: none;
+            }
+
+            .cat-t {
+                cursor: pointer;
+            }
+
+
+        }
+    }
+
+    .section-shopping {
+        .filter-left {
+            display: none;
+
+        }
+    }
+}

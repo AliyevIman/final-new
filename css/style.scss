@@ -3,8 +3,9 @@
 @import "_toys";
 
 // <---------HEader Start------------>
+
 #header {
-    background-color: transparent;
+    // background-color: black;
     // height: 100%;
     width: 100%;
     padding: 15px 10px;
@@ -15,11 +16,17 @@
 
     .logo {
         width: 20%;
+        
 
-        img {
+        .img1 {
             max-width: 300px;
 
         }
+
+        // .img2 {
+        //     // display: none;
+        //     max-width: 300px;
+        // }
     }
 
     .bars {
@@ -37,7 +44,7 @@
             // <--- Home start--->
             .home {
                 position: relative;
-                transition: 1s all;
+                transition: 0.1s all;
 
                 &:hover {
                     ul {
@@ -327,6 +334,13 @@
             color: #ffff;
             padding: 11px;
             font-size: 20px;
+            cursor: pointer;
+            transform: scale(1);
+            transition: 500ms all;
+
+            &:hover {
+                transform: scale(1.1);
+            }
 
 
         }
@@ -597,6 +611,34 @@
 @media (max-width:567px) {
     #header {
         height: 100%;
+        position: relative;
+        background-color: #fff;
+
+        .logo {
+            img {
+                &:nth-child(1) {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    width: 300px;
+                    //   height: 300px;
+                    display: block;
+                }
+            }
+
+        }
+
+        .contact {
+            i {
+                color: rgba(0, 0, 0, 0.713);
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+
+        }
 
         .bars {
             display: block;
@@ -648,6 +690,21 @@
 @media (min-width:567px) and (max-width:992px) {
     #header {
         height: 100%;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        background-color: #fff;
+
+        .contact {
+            i {
+                color: rgba(0, 0, 0, 0.713);
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+
+        }
 
         .bars {
             display: block;
@@ -688,6 +745,5 @@
         // }
     }
 }
-@media(min-width:992px) and (max-width:1200px){
-    
-}
+
+@media(min-width:992px) and (max-width:1200px) {}
