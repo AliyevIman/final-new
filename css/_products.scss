@@ -1,13 +1,6 @@
-// @import"_mixin";
-// @import"_responsive";
-// @import"style";
-
-// <----Section-cat start---->
-
-
 .section-cat {
     width: 100%;
-    height: 100vh;
+    height: 69vh;
     background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/breadcumd_1512x.jpg?v=1625127338);
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px 0;
+    // padding: 120px 0;
+    padding-bottom: 80px;
 
     .center-boxes {
         width: 80%;
@@ -90,10 +84,12 @@
                 h6 {
                     margin-top: 15px;
                     color: #fff;
-                    font-size: 17px;
+                    font-size: 15px;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                     font-weight: 600;
                     cursor: pointer;
+                    text-align: center;
+
                 }
 
                 &::before {
@@ -123,9 +119,10 @@
                 border-radius: 50%;
                 overflow: hidden;
                 // margin: 0px 10px;
-                width: 100%;
-                height: 100%;
+                width: 70%;
+                height: 70%;
                 cursor: pointer;
+                margin-left: 20px;
 
                 &:hover:before,
                 ::after {
@@ -135,13 +132,14 @@
                     position: absolute;
                     left: 0%;
                     // bottom: 0%;
-                    width: 100%;
-                    height: 100%;
+                    width: 70%;
+                    height: 70%;
                     top: 0%;
                     // right: 0%;
                     border-radius: 100%;
                     transition: 300ms all;
                     animation: animate 500ms infinite;
+                    margin-left: 20px;
 
 
 
@@ -211,308 +209,12 @@
 
 }
 
-// <----Section-cat start---->
-.section-shopping {
-    width: 100%;
-    // height: 100vh;
+.section-product {
     padding: 90px 0;
+    height: 100%;
+    width: 100%;
 
-    // <----Fliter left
-    .filter-left {
-        .price {
-            h5 {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: 600
-            }
-
-            ul {
-                margin: 30px 0;
-
-                li {
-                    &:nth-child(1) {
-                        input {
-                            width: 80px;
-                            padding: 0 25px;
-                            outline: none;
-                            border: 1px solid rgba(0, 0, 0, 0.337);
-
-                            &::placeholder {
-                                color: black;
-                            }
-
-
-                        }
-                    }
-
-                    span {
-                        color: rgba(0, 0, 0, 0.59);
-
-                    }
-
-                    &:nth-child(3) {
-                        input {
-                            width: 80px;
-                            padding: 0 22px;
-
-                            border: 1px solid rgba(0, 0, 0, 0.337);
-                            outline: none;
-
-                            &::placeholder {
-                                color: black;
-                            }
-                        }
-                    }
-
-                }
-            }
-
-            .range {
-                outline: none;
-                border: none;
-                width: 100%;
-                background-color: $narinci-aciq;
-
-
-            }
-
-            a {
-                display: block;
-                color: black;
-                width: 60px;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-size: 15px;
-                font-weight: 500;
-                height: 30px;
-                border: 2px solid rgba(0, 0, 0, 0.466);
-                line-height: 30px;
-                text-align: center;
-                border-radius: 30px;
-                margin: 20px 0;
-                position: relative;
-                overflow: hidden;
-                z-index: 999999999;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    bottom: 0%;
-                    left: 0%;
-                    width: 100%;
-                    height: 0%;
-                    transition: 100ms all ease;
-                    z-index: 0;
-
-
-                }
-
-                &:hover {
-                    border: none;
-
-                    &::before {
-                        content: "Filter";
-                        width: 100%;
-                        height: 100%;
-                        background-color: $narinci-aciq;
-                        color: #fff;
-
-
-                        // top: 100%;
-                    }
-
-
-                }
-
-
-            }
-        }
-
-        .size {
-            ul {
-
-
-
-                li {
-                    margin: 10px 0;
-                    @include input;
-
-
-
-
-                }
-            }
-        }
-
-        .color {
-            @include input3;
-
-            ul {
-
-
-
-                li {
-                    margin: 10px 0;
-                    @include input;
-
-                    label {
-                        span {
-
-                            width: 30px;
-                            height: 30px;
-                            line-height: 15px;
-                            background-color: red;
-                            border-radius: 100%;
-
-                        }
-                    }
-
-                }
-            }
-        }
-
-        .brand {
-            @include input4;
-
-            ul {
-
-
-
-                li {
-                    margin: 10px 0;
-                    // @include input;
-
-
-
-                }
-            }
-        }
-
-        .best-seller {
-            height: 100%;
-
-            .cras {
-                border-bottom: 1px dashed rgba(0, 0, 0, 0.452);
-
-                .left-product {
-                    width: 110px;
-                    height: 90px;
-                    background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/products/product-23_100x.jpg?v=1636281259);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    border: 1px solid rgba(0, 0, 0, 0.255);
-                    border-radius: 3px;
-                    padding: 25px 0;
-                    margin-right: 35px;
-
-                }
-
-                .right-product {
-                    .star {
-
-
-                        i {
-                            color: $sari;
-                            font-size: 12px;
-                            margin-bottom: 5px;
-
-                        }
-
-                        span {
-                            font-size: 15px;
-                            color: rgba(0, 0, 0, 0.522);
-                        }
-                    }
-
-                    .texti {
-                        h6 {
-                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                            font-weight: 600;
-
-                        }
-
-                        p {
-                            color: $narinci-aciq;
-                            font-size: 25px;
-                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-
-
-        }
-
-        @include morbi;
-        @include morrbi2;
-        @include purus;
-
-    }
-
-    .tags {
-        .tag-buttons {
-            .catf-btn {
-                width: 90px;
-                height: 35px;
-                line-height: 30px;
-                background-color: #fff;
-                border: 1px solid rgba(0, 0, 0, 0.425);
-                border-radius: 30px;
-                text-align: center;
-                position: relative;
-                overflow: hidden;
-                margin-bottom: 10px;
-
-
-                &::before {
-                    content: "Cat Food";
-                    position: absolute;
-                    right: 0%;
-                    top: 0%;
-                    background-color: $narinci-aciq;
-                    width: 0%;
-                    height: 100%;
-                    transition: 0.3s all ease;
-                    cursor: pointer;
-                    color: #fff;
-                    font-size: 13px;
-
-                }
-
-                &:hover {
-
-                    // border: 1px solid $narinci-aciq;
-                    a{
-                        opacity: 0;
-                        visibility: hidden;
-                    }
-                    &::before {
-                        width: 100%;
-
-
-                        a {
-                            color: #fff;
-
-                        }
-                    }
-                }
-
-                a {
-                    display: inline-block;
-                    color: black;
-                    z-index: 9999;
-                    font-size: 13px;
-
-                }
-            }
-
-            @include dogf;
-            @include dogt;
-            @include fishf;
-        }
-    }
-
-    .shop-zone {
+    .product-zone {
         .shop-bag1 {
             // padding-left: 20px;
             position: relative;
@@ -629,63 +331,136 @@
             }
         }
 
-        @include shop-bag2;
-        @include shop-bag3;
-        @include shop-bag4;
-        @include shop-bag5;
-        @include shop-bag6;
-        @include shop-bag7;
-        @include shop-bag8;
-        @include shop-bag9;
-        @include shop-bag10;
-        @include shop-bag11;
-        @include shop-bag12;
-        @include shop-bag13;
-        @include shop-bag14;
-        @include shop-bag15;
+        .shop-bag2 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag3 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag4 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag5 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag6 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag7 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag8 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag9 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag10 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag11 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag12 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag13 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag14 {
+            position: relative;
+            @include shop-bag;
+
+        }
+
+        .shop-bag15 {
+            position: relative;
+            @include shop-bag;
+        }
+
+
+        
 
         .bottom-slide {
             display: flex;
             align-items: center;
             justify-content: center;
-        a{
-            display: inline-block;
-           
-            width: 45px;
-            height: 45px;
-            background-color: #fff;
-            border-radius: 50%;
-            border: 1px solid rgba(0, 0, 0, 0.404);
-            line-height: 45px;
-            text-align: center;
-            color: black;
-            margin: 0 3px;
-            transition: 0.2s ease;
-            &:hover{
-                background-color: black;
-                color: #fff;
-                i{
+
+            a {
+                display: inline-block;
+
+                width: 45px;
+                height: 45px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid rgba(0, 0, 0, 0.404);
+                line-height: 45px;
+                text-align: center;
+                color: black;
+                margin: 0 3px;
+                transition: 0.2s ease;
+
+                &:hover {
+                    background-color: black;
                     color: #fff;
+
+                    i {
+                        color: #fff;
+                    }
+                }
+
+                i {
+                    color: black;
+                    font-size: 22px;
+                    font-weight: lighter;
                 }
             }
-            i{
-                color: black;
-                font-size: 22px;
-                font-weight: lighter;
+
+            .a--1 {
+                background-color: black;
+                color: #fff;
             }
-        }
-        .a--1{
-            background-color: black;
-            color: #fff;
-        }
 
         }
 
     }
-
 }
-
-// <----Fliter left end
 
 
 
@@ -727,10 +502,11 @@
         background-color: #fff;
 
         .logo {
-            .img-1{
+            .img-1 {
                 display: none;
             }
-            .img2{
+
+            .img2 {
                 display: block;
                 max-width: 150px;
                 height: auto;
@@ -788,6 +564,8 @@
     }
 
     .section-cat {
+        height: 100%;
+
         .bottom-center {
             .dog-t {
                 display: none;
@@ -816,11 +594,13 @@
     #header {
         height: 100%;
         background-color: #fff;
+
         .logo {
-            .img-1{
+            .img-1 {
                 display: none;
             }
-            .img2{
+
+            .img2 {
                 display: block;
                 max-width: 150px;
                 height: auto;
@@ -842,6 +622,8 @@
     }
 
     .section-cat {
+        height: 100%;
+
         .bottom-center {
             .dog-t {
                 display: none;
@@ -872,11 +654,13 @@
 @media (min-width:768px) and (max-width:992px) {
     #header {
         height: 100%;
+
         .logo {
-            .img-1{
+            .img-1 {
                 display: none;
             }
-            .img2{
+
+            .img2 {
                 display: block;
                 max-width: 150px;
                 height: auto;
@@ -939,6 +723,8 @@
     }
 
     .section-cat {
+        height: 100%;
+
         .bottom-center {
             .dog-t {
                 display: none;
